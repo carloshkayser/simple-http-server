@@ -46,7 +46,7 @@ jobs:
         with:
           context: ci
           push: true # Will only build if this is not here
-          tags: ghcr.io/${{ github.repository }}:head
+          tags: ghcr.io/${{ github.repository }}:head,ghcr.io/${{ github.repository }}:latest
             
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
