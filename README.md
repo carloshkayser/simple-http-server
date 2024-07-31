@@ -3,7 +3,13 @@
 ### Build
 
 ```sh
-$ docker build -t carloshkayser/simple-http-server -f ci/Dockerfile .
+docker build -t carloshkayser/simple-http-server -f ci/Dockerfile .
+```
+
+### Run
+
+```sh
+docker run -d -p 3333:3333 carloshkayser/simple-http-server
 ```
 
 #### Tag and push
