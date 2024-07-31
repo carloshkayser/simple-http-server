@@ -9,7 +9,8 @@ docker build -t carloshkayser/simple-http-server -f ci/Dockerfile .
 ### Run
 
 ```sh
-docker run -d -p 3333:3333 carloshkayser/simple-http-server
+docker run -d -p 3333:3333 --name simple-http-server carloshkayser/simple-http-server
+docker logs -f simple-http-server
 ```
 
 #### Tag and push
